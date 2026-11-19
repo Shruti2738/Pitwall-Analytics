@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Core palette */
+  --black:     #080808;
+  --white:     #F5F5F5;
+  --red:       #E10600;
+  --red-dim:   rgba(225, 6, 0, 0.12);
+  --red-glow:  rgba(225, 6, 0, 0.06);
+
+  /* Grays */
+  --gray-1:  #111111;
+  --gray-2:  #1a1a1a;
+  --gray-3:  #2a2a2a;
+  --gray-4:  #444444;
+  --gray-5:  #666666;
+  --gray-6:  #888888;
+
+  /* Spacing scale */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* Team colors */
+  --mclaren:       #FF8000;
+  --ferrari:       #E8002D;
+  --redbull:       #3671C6;
+  --mercedes:      #27F4D2;
+  --williams:      #64C4FF;
+  --audi:          #52E252;
+  --aston:         #229971;
+  --alpine:        #FF87BC;
+  --haas:          #B6BABD;
+  --racingbulls:   #6692FF;
+  --cadillac:      #FFFFFF;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography utilities */
+.display   { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.05em; }
+.mono      { font-family: 'JetBrains Mono', monospace; }
+.eyebrow   { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
+
+/* Scrollbar */
+::-webkit-scrollbar       { width: 3px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: var(--red); }
+
+/* Utility classes */
+.red-bar { display: block; width: 40px; height: 3px; background: var(--red); margin-bottom: var(--space-3); }
+.divider { width: 100%; height: 1px; background: var(--gray-2); margin: var(--space-8) 0; }
